@@ -1,4 +1,13 @@
 defmodule Identicon do
+  @doc """
+    The input source of the identicon generator. Pass a random string into here e.g. "Alex".
+
+  ## Examples
+
+      iex> Identicon.main("Alex")
+      :ok
+
+  """
   def main(input) do
     input
     |> hash_input
@@ -8,6 +17,8 @@ defmodule Identicon do
     |> build_pixel_map
     |> draw_image
     |> save_image(input)
+
+    :ok
   end
 
   def save_image(image, input) do
