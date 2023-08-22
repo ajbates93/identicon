@@ -1,6 +1,6 @@
 # Identicon
 
-** A library that can generate an identicon image from a random string input. Written in ELixir **
+**A library that can generate an identicon image from a random string input. Written in ELixir**
 
 ## Installation
 
